@@ -7,15 +7,15 @@ module.exports = {
     // Your Name
     name: 'Ashley Holbrook',
     // Main Site Title
-    title: `Ashley Holbrook | Software Engineer`,
+    title: `Ashley Holbrook | Software Developer`,
     // Description that goes under your name in main bio
-    description: `Software Engineer with over 4 years of professional experience in JavaScript/TypeScript applications (React, Node.js).`,
+    description: `Software Developer with over 4 years of professional experience in JavaScript/TypeScript applications (React, Node.js).`,
     // Optional: Github account URL
     github: `https://github.com/smasherly`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/ashley-holbrook`,
     // Content of the About Me section
-    about: `I'm a Software Engineer with over 4 years of professional experience building high-quality JavaScript/TypeScript applications (React, Node.js). I specialize in crafting robust, scalable web apps with a strong focus on usability and interface polish, drawing on my background in design. I also bring a solid foundation in testing — from edge cases to exploratory testing — to ensure reliability and maintainability at every stage of development. I take pride in clean, tested code and enjoy mentoring junior developers on remote agile teams.`,
+    about: `I'm a Software Developer with over 4 years of professional experience building high-quality JavaScript/TypeScript applications (React, Node.js). I specialize in crafting robust, scalable web apps with a strong focus on usability and interface polish, drawing on my background in design. I also bring a solid foundation in testing — from edge cases to exploratory testing — to ensure reliability and maintainability at every stage of development. I take pride in clean, tested code and enjoy mentoring junior developers on remote agile teams.`,
     // List your projects
     projects: [
       {
@@ -43,22 +43,23 @@ module.exports = {
         company: 'Crema',
         roles: [
           {
-            description: 'Software Engineer II (Jan. 2023 – Present)',
+            description: 'Software Developer II (Jan. 2023 – Present)',
             link: '',
           },
           {
-            description: 'Software Engineer I (Jan. 2022 – Dec. 2022)',
+            description: 'Software Developer I (Jan. 2022 – Dec. 2022)',
             link: '',
           },
           {
-            description: 'Software Engineer Apprentice (Jan. 2021 – Dec. 2021)',
+            description:
+              'Software Developer Apprentice (Jan. 2021 – Dec. 2021)',
             link: '',
           },
           {
-            description: 'Senior Test Engineer (Jan. 2020 – Dec. 2020)',
+            description: 'Senior Test Developer (Jan. 2020 – Dec. 2020)',
             link: '',
           },
-          { description: 'Test Engineer (Nov. 2017 – Dec. 2019)', link: '' },
+          { description: 'Test Developer (Nov. 2017 – Dec. 2019)', link: '' },
         ],
       },
       {
