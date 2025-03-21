@@ -25,11 +25,11 @@ const Index = ({ data }) => {
       <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
       {about && <SectionAbout about={about} />}
       {projects && projects.length && <SectionProjects projects={projects} />}
-      {!noBlog && <SectionBlog posts={posts} />}
       {experience && experience.length && (
         <SectionExperience experience={experience} />
       )}
       {skills && skills.length && <SectionSkills skills={skills} />}
+      {!noBlog && <SectionBlog posts={posts} />}
     </Layout>
   );
 };
@@ -53,9 +53,11 @@ export const pageQuery = graphql`
           link
         }
         experience {
-          name
-          description
-          link
+          company
+          roles {
+            description
+            link
+          }
         }
         skills {
           name

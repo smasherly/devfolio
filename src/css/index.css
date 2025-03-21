@@ -3,13 +3,29 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-gray-900;
+  }
+  a {
+    @apply text-slate-500;
+  }
+  a:hover {
+    @apply text-slate-400 !important;
+  }
+  h3 {
+    @apply text-slate-500 !important;
+  }
+  h1 {
+    @apply text-slate-500 !important;
+  }
+
   .blog-content {
-    @apply text-gray-600;
+    @apply text-slate-500;
     @apply max-w-screen-md;
   }
 
   .blog-content a {
-    @apply text-black;
+    @apply text-slate-500;
     @apply underline;
   }
 
@@ -24,6 +40,15 @@
     @apply ml-10;
   }
 
+  .blog-content a {
+    @apply text-white underline;
+  }
+
+  .blog-content a:hover,
+  .blog-content a:focus {
+    @apply text-blue-400; /* Changes link color on hover/focus */
+  }
+
   .blog-content ul li {
     @apply list-disc;
   }
@@ -34,40 +59,40 @@
 
   .blog-content h1 {
     @apply text-4xl;
-    @apply text-gray-900;
+    @apply text-gray-400;
     @apply font-bold;
     @apply my-3;
   }
 
   .blog-content h2 {
     @apply text-2xl;
-    @apply text-gray-900;
+    @apply text-gray-400;
     @apply font-bold;
     @apply my-3;
   }
 
   .blog-content h3 {
     @apply text-xl;
-    @apply text-gray-900;
+    @apply text-gray-400;
     @apply font-bold;
     @apply my-3;
   }
 
   .blog-content h4 {
-    @apply text-gray-900;
+    @apply text-gray-400;
     @apply font-bold;
     @apply my-3;
   }
 
   .blog-content h5 {
-    @apply text-gray-900;
+    @apply text-gray-400;
     @apply text-sm;
     @apply font-bold;
     @apply my-3;
   }
 
   .blog-content h6 {
-    @apply text-gray-700;
+    @apply text-gray-400;
     @apply text-xs;
     @apply font-bold;
     @apply my-3;
@@ -103,7 +128,7 @@
 
 code[class*='language-'],
 pre[class*='language-'] {
-  color: #c5c8c6;
+  color: #ebebeb;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
   font-size: 0.75rem;

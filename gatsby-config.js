@@ -1,75 +1,93 @@
 module.exports = {
+  pathPrefix: '/devfolio',
+
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `https://monumental-chimera-b1ace3.netlify.app/`,
+    siteUrl: `https://ashleyholbrook.com/`,
     // Your Name
-    name: 'Ryan Fitzgerald',
+    name: 'Ashley Holbrook',
     // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
+    title: `Ashley Holbrook | Software Engineer`,
     // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
-    // Optional: Twitter account handle
-    author: `@rfitzio`,
+    description: `Software Engineer with over 4 years of professional experience in JavaScript/TypeScript applications (React, Node.js).`,
     // Optional: Github account URL
-    github: `https://github.com/RyanFitzgerald`,
+    github: `https://github.com/smasherly`,
     // Optional: LinkedIn account URL
-    linkedin: `https://github.com/RyanFitzgerald/devfolio`,
+    linkedin: `https://www.linkedin.com/in/ashley-holbrook`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
-    // Optional: List your projects, they must have `name` and `description`. `link` is optional.
+    about: `I'm a Software Engineer with over 4 years of professional experience building high-quality JavaScript/TypeScript applications (React, Node.js). I specialize in crafting robust, scalable web apps with a strong focus on usability and interface polish, drawing on my background in design. I also bring a solid foundation in testing — from edge cases to exploratory testing — to ensure reliability and maintainability at every stage of development. I take pride in clean, tested code and enjoy mentoring junior developers on remote agile teams.`,
+    // List your projects
     projects: [
       {
-        name: 'Devfolio',
+        name: `Today's Dollars`,
         description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Google Chrome Extension that calculates inflation-adjusted USD values using CPI-U data. Built with JavaScript, HTML5, and CSS.',
+        link: 'https://chromewebstore.google.com/detail/bfdehmfnafpnhfgaocbkjdidgcomapik?utm_source=item-share-cb',
       },
       {
-        name: 'ExtensionKit',
+        name: `The Internet, MUI`,
         description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://extensionkit.io/?ref=devfolio',
+          'I created this project to remake The Internet (https://the-internet.herokuapp.com/), a well known website used for automated testing UI features, to use React, Typescript, and MUI.',
+        link: 'https://cremalab.github.io/the-internet-crema/#/',
       },
       {
-        name: 'Another Cool Project',
+        name: `Booster Club Site`,
         description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Subscription management SPA enabling parents to download football game photos via AWS S3 integration. Built with React.js, Node.js/Express, GraphQL, AWS, and Strapi.',
+        link: 'https://osfalconfootball.com/',
       },
     ],
-    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
+    // List your experience
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        company: 'Crema',
+        roles: [
+          {
+            description: 'Software Engineer II (Jan. 2023 – Present)',
+            link: '',
+          },
+          {
+            description: 'Software Engineer I (Jan. 2022 – Dec. 2022)',
+            link: '',
+          },
+          {
+            description: 'Software Engineer Apprentice (Jan. 2021 – Dec. 2021)',
+            link: '',
+          },
+          {
+            description: 'Senior Test Engineer (Jan. 2020 – Dec. 2020)',
+            link: '',
+          },
+          { description: 'Test Engineer (Nov. 2017 – Dec. 2019)', link: '' },
+        ],
       },
       {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        company: 'Tabco Inc.',
+        roles: [
+          {
+            description: 'Prepress Coordinator (Jul. 2011 – Nov. 2017)',
+            link: '',
+          },
+        ],
       },
     ],
-    // Optional: List your skills, they must have `name` and `description`.
+
+    // List your skills
     skills: [
       {
         name: 'Languages & Frameworks',
         description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+          'React.js, TypeScript, JavaScript, Node.js, Express, TurboRepo, Material UI, Tailwind CSS, DaisyUI, GraphQL',
       },
       {
-        name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
-      },
-      {
-        name: 'Other',
+        name: 'Tools & Testing',
         description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+          'Jest, Cypress, WDIO, Mocha, Chai, AWS, Docker, CI/CD, WCAG Compliance',
+      },
+      {
+        name: 'Soft Skills',
+        description:
+          'Analytic thinking, Debugging, Customer-Centric Focus, Communication, Problem Solving, Mentorship, Adaptability',
       },
     ],
   },
