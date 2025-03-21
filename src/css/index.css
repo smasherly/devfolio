@@ -7,25 +7,33 @@
     @apply bg-gray-900;
   }
   a {
-    @apply text-slate-500;
+    @apply text-slate-400;
   }
   a:hover {
-    @apply text-slate-400 !important;
+    @apply text-slate-300 !important;
   }
   h3 {
-    @apply text-slate-500 !important;
+    @apply text-slate-400 !important;
   }
   h1 {
+    @apply text-slate-400 !important;
+  }
+
+  h2 {
+    @apply text-slate-400 !important;
+  }
+
+  p {
     @apply text-slate-500 !important;
   }
 
   .blog-content {
-    @apply text-slate-500;
+    @apply text-slate-400;
     @apply max-w-screen-md;
   }
 
   .blog-content a {
-    @apply text-slate-500;
+    @apply text-slate-400;
     @apply underline;
   }
 
