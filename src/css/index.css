@@ -7,10 +7,10 @@
     @apply bg-gray-900;
   }
   a {
-    @apply text-slate-400;
+    @apply text-indigo-500;
   }
   a:hover {
-    @apply text-slate-300 !important;
+    @apply text-indigo-400 !important;
   }
   h3 {
     @apply text-slate-400 !important;
