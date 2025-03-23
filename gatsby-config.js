@@ -3,7 +3,7 @@ module.exports = {
 
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `https://ashleyholbrook.com/`,
+    siteUrl: `https://github.com/smasherly/devfolio`,
     // Your Name
     name: 'Ashley Holbrook',
     // Main Site Title
