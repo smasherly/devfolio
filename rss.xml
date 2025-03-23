@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Your Site's RSS Feed]]></title><description><![CDATA[Software Developer with over 4 years of professional experience in JavaScript/TypeScript applications (React, Node.js).]]></description><link>https://ashleyholbrook.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 Mar 2025 02:13:31 GMT</lastBuildDate><item><title><![CDATA[How Tailwind Clicked for Me]]></title><description><![CDATA[I’ve been using Tailwind for the past four months. At first, I didn’t get it. The code looked messy and there were classes everywhere—it was…]]></description><link>https://ashleyholbrook.com/blog/i-like-tailwind/</link><guid isPermaLink="false">https://ashleyholbrook.com/blog/i-like-tailwind/</guid><pubDate>Tue, 04 Mar 2025 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I’ve been using Tailwind for the past four months. At first, I didn’t get it. The code looked messy and there were classes everywhere—it was a real struggle.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Your Site's RSS Feed]]></title><description><![CDATA[Software Developer with over 4 years of professional experience in JavaScript/TypeScript applications (React, Node.js).]]></description><link>https://ashleyholbrook.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 Mar 2025 02:16:57 GMT</lastBuildDate><item><title><![CDATA[How Tailwind Clicked for Me]]></title><description><![CDATA[I’ve been using Tailwind for the past four months. At first, I didn’t get it. The code looked messy and there were classes everywhere—it was…]]></description><link>https://ashleyholbrook.com/blog/i-like-tailwind/</link><guid isPermaLink="false">https://ashleyholbrook.com/blog/i-like-tailwind/</guid><pubDate>Tue, 04 Mar 2025 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I’ve been using Tailwind for the past four months. At first, I didn’t get it. The code looked messy and there were classes everywhere—it was a real struggle.&lt;/p&gt;
 &lt;p&gt;Then I wrote this:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;Spinner&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div className&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;w-4 h-4 border-2 border-gray-300 border-t-gray-600 rounded-full animate-spin ml-2&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Then I built a simple spinner using just Tailwind classes—no extra library, no digging through countless class names. And just like that—it clicked. I realized how versatile and time-saving Tailwind can be.&lt;/p&gt;
 &lt;p&gt;Now I know why people dig it.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/spinner.gif&quot; alt=&quot;Tailwind Spinner&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Today's Dollars 3.0 is Here!]]></title><description><![CDATA[I just published version 3.0 of my Chrome Extension, Today’s Dollars! Let me share the backstory before diving into the new features and why…]]></description><link>https://ashleyholbrook.com/blog/version-3-todays-dollars/</link><guid isPermaLink="false">https://ashleyholbrook.com/blog/version-3-todays-dollars/</guid><pubDate>Tue, 25 Feb 2025 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I just published version 3.0 of my Chrome Extension, Today’s Dollars! Let me share the backstory before diving into the new features and why I’m writing this.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/devfolio/8fcff1a0ca3face923540363f08abd3e/spinner.gif&quot; alt=&quot;Tailwind Spinner&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Today's Dollars 3.0 is Here!]]></title><description><![CDATA[I just published version 3.0 of my Chrome Extension, Today’s Dollars! Let me share the backstory before diving into the new features and why…]]></description><link>https://ashleyholbrook.com/blog/version-3-todays-dollars/</link><guid isPermaLink="false">https://ashleyholbrook.com/blog/version-3-todays-dollars/</guid><pubDate>Tue, 25 Feb 2025 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I just published version 3.0 of my Chrome Extension, Today’s Dollars! Let me share the backstory before diving into the new features and why I’m writing this.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Where we started?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;In 2023, I challenged myself to create and publish a Chrome Extension. If you’ve ever talked to me for more than five minutes, you know I have a passion for numbers and budgets. I found myself wondering: What if I could update all the numbers on a webpage to reflect inflation adjusted amounts? Is my grocery spending getting out of control? How much of that is due to inflation?&lt;/p&gt;
 &lt;p&gt;While I was able to find and update every dollar amount on a page, determining the base year for each figure wasn’t straightforward. After getting way too deep in the weeds, I had to step back and ask: What am I actually trying to accomplish? I decided to simplify my approach and create a calculator instead. Lucky for me, the Bureau of Labor Statistics provides inflation data for free.&lt;/p&gt;
@@ -18,4 +18,36 @@
 Because I’m proud of the work I did, and I want people to see it. I also want feedback! What would you like to see next? I’ve enabled support tickets on my listing so I can hear from you, or you can try it out and reach out to me here. Check out my extension! 👉 &lt;a href=&quot;https://chromewebstore.google.com/detail/todays-dollars/bfdehmfnafpnhfgaocbkjdidgcomapik&quot;&gt;todaysdollars.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Thank you for reading to the end, and thank you to everyone who has supported me along the way! This is a passion project—I do it for free and have elected not to collect any data or run ads. My goal is to contribute something that people find useful.&lt;/p&gt;
 &lt;p&gt;Now, check out some media from the listing page!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/listing-page.png&quot; alt=&quot;Listing Page&quot;&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/devfolio/static/07a610066a8ab544ba43c4f8180a109f/2cefc/listing-page.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 39.86486486486486%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB80lEQVR42gHoARf+APAXJOpAKce6QLHXVLDSXrLWXLXSStV/MdhvP9RxP+weIusZIukaIewUIecvJdGINMG+RdqGONeDNO07KQDdJyOlqTeSv1eCo2aAp3J7nmmAo1uVukaGw5iM26rWYTS2EB6oHSSkLh+6u0On4mqSsmWqHB+ZQiPEOCUAvXwuf61Pe5xwd6WQfrOmfK+gfKeHhqVff6Blja5y3k4x3Zmh3Nbb0NS3mLtcUVdPTEdHUDo7UkBIkCoyAL/LRarXeIu9mYG6sXyyqXispIG2pISodo27TNd5MfELHeW+u/3//+Tv6Iu7cExLR0NDRUdIR0ZZV4I0NgC31Uqex3dsl4JkkIpkkIdjjoZchH18o3ufy1/DqDbDoUXR1Lna3ePdx8Cvck5YWVhdXF1MSEhFUFCEMjUAwL9Boc5vc5t8a5mQa5qUbZyXcZ6LeZ9voL1Nsd9mmOGlytjQ1djZ47O22BkkXFVVXV5eTklJQk5NgjAzANR4MKziXaHMhJjOpZPOtZTNsIq4i5nAZ7LVTp/Zmp+4uNnb3PD//+zKy9IhJj4+PjxGRT5CQjVJSX8yNQDrICPGqzuw3mGr1Xqn1oeq14SRtl6rvkS/yEah1JbpP0brWV7WfH/rS1HjHSSqIyiqKCyqJiukJyvGIics/vmmFU+osAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Listing Page&quot;
+        title=&quot;&quot;
+        src=&quot;/devfolio/static/07a610066a8ab544ba43c4f8180a109f/fcda8/listing-page.png&quot;
+        srcset=&quot;/devfolio/static/07a610066a8ab544ba43c4f8180a109f/12f09/listing-page.png 148w,
+/devfolio/static/07a610066a8ab544ba43c4f8180a109f/e4a3f/listing-page.png 295w,
+/devfolio/static/07a610066a8ab544ba43c4f8180a109f/fcda8/listing-page.png 590w,
+/devfolio/static/07a610066a8ab544ba43c4f8180a109f/efc66/listing-page.png 885w,
+/devfolio/static/07a610066a8ab544ba43c4f8180a109f/c83ae/listing-page.png 1180w,
+/devfolio/static/07a610066a8ab544ba43c4f8180a109f/2cefc/listing-page.png 1400w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
