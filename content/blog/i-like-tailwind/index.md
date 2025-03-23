@@ -18,4 +18,4 @@ Then I built a simple spinner using just Tailwind classes—no extra library, no
 
 Now I know why people dig it.
 
-![Tailwind Spinner](./spinner.gif)
+![Tailwind Spinner](/devfolio/spinner.gif)
