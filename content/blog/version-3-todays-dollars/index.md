@@ -29,4 +29,4 @@ Thank you for reading to the end, and thank you to everyone who has supported me
 
 Now, check out some media from the listing page!
 
-![Listing Page](./listing-page-marquee.png)
+![Listing Page](/listing-page.png)
