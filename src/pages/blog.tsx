@@ -7,7 +7,44 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import NotFound from '../pages/404';
 
-const Index = ({ data }) => {
+interface SiteMetadata {
+  name: string;
+  title: string;
+  description: string;
+  about: string;
+  author: string;
+  github: string;
+  linkedin: string;
+}
+
+interface MarkdownRemark {
+  node: {
+    excerpt: string;
+    fields: {
+      slug: string;
+    };
+    frontmatter: {
+      date: string;
+      title: string;
+      description: string;
+    };
+  };
+}
+
+interface PageData {
+  site: {
+    siteMetadata: SiteMetadata;
+  };
+  allMarkdownRemark: {
+    edges: MarkdownRemark[];
+  };
+}
+
+interface PageProps {
+  data: PageData;
+}
+
+const BlogPage: React.FC<PageProps> = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
   const noBlog = !posts || !posts.length;
 
@@ -24,7 +61,7 @@ const Index = ({ data }) => {
   );
 };
 
-export default Index;
+export default BlogPage;
 
 export const pageQuery = graphql`
   query {

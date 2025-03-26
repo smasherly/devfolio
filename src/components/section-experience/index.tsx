@@ -2,7 +2,24 @@ import React from 'react';
 import Section from '../section';
 import SummaryItem from '../summary-item';
 
-const SectionExperience = ({ experience }) => {
+interface Role {
+  name: string;
+  description: string;
+  link: string;
+}
+
+interface Experience {
+  company: string;
+  roles: Role[];
+}
+
+interface SectionExperienceProps {
+  experience: Experience[];
+}
+
+const SectionExperience: React.FC<SectionExperienceProps> = ({
+  experience,
+}) => {
   if (!experience || !experience.length) return null;
 
   return (
@@ -13,7 +30,6 @@ const SectionExperience = ({ experience }) => {
           {group.roles.map((role, idx) => (
             <SummaryItem
               key={idx}
-              // You can choose how to display each role; for example, using the description as both title and text
               name={role.name}
               description={role.description}
               link={role.link}

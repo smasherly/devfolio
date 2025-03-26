@@ -12,7 +12,39 @@ const classes = {
   date: 'text-gray-600 font-light',
 };
 
-const BlogPost = ({ data }) => {
+interface SiteMetadata {
+  name: string;
+  title: string;
+  description: string;
+  about: string;
+  author: string;
+  github: string;
+  linkedin: string;
+}
+
+interface MarkdownRemark {
+  id: string;
+  excerpt: string;
+  html: string;
+  frontmatter: {
+    title: string;
+    date: string;
+    description: string;
+  };
+}
+
+interface PageData {
+  site: {
+    siteMetadata: SiteMetadata;
+  };
+  markdownRemark: MarkdownRemark;
+}
+
+interface PageProps {
+  data: PageData;
+}
+
+const BlogPost: React.FC<PageProps> = ({ data }) => {
   const post = data.markdownRemark;
 
   return (

@@ -7,11 +7,23 @@ const classes = {
   description: 'text-md text-gray-600 font-light',
 };
 
-const SummaryItem = ({ name, description, link = false, internal = false }) => {
+interface SummaryItemProps {
+  name: string;
+  description: string;
+  link?: string | boolean;
+  internal?: boolean;
+}
+
+const SummaryItem: React.FC<SummaryItemProps> = ({
+  name,
+  description,
+  link = false,
+  internal = false,
+}) => {
   let linkContent;
-  if (internal) {
+  if (internal && typeof link === 'string') {
     linkContent = <Link to={link}>{name}</Link>;
-  } else {
+  } else if (typeof link === 'string') {
     linkContent = <a href={link}>{name}</a>;
   }
 

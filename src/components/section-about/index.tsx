@@ -2,7 +2,11 @@ import React from 'react';
 
 import Section from '../section';
 
-const SectionAbout = ({ about }) => {
+interface SectionAboutProps {
+  about: string;
+}
+
+const SectionAbout: React.FC<SectionAboutProps> = ({ about }) => {
   return (
     <Section title="About Me">
       <div className="mb-6">

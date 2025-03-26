@@ -4,7 +4,23 @@ import React from 'react';
 import Section from '../section';
 import SummaryItem from '../summary-item';
 
-const SectionBlog = ({ posts }) => {
+interface MarkdownRemark {
+  node: {
+    fields: {
+      slug: string;
+    };
+    frontmatter: {
+      title: string;
+      description: string;
+    };
+  };
+}
+
+interface SectionBlogProps {
+  posts: MarkdownRemark[];
+}
+
+const SectionBlog: React.FC<SectionBlogProps> = ({ posts }) => {
   return (
     <Section title="Latest Posts">
       {posts.map((post) => (

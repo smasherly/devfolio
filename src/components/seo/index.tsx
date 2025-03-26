@@ -1,22 +1,41 @@
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
 
-const SEO = ({ description, lang, meta, title }) => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
+interface SEOProps {
+  description?: string;
+  lang?: string;
+  meta?: Array<{ name: string; content: string }>;
+  title?: string;
+}
+
+interface SiteQuery {
+  site: {
+    siteMetadata: {
+      title: string;
+      description: string;
+      author: string;
+    };
+  };
+}
+
+const SEO: React.FC<SEOProps> = ({
+  description,
+  lang = 'en',
+  meta = [],
+  title,
+}) => {
+  const { site } = useStaticQuery<SiteQuery>(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          author
         }
       }
-    `
-  );
+    }
+  `);
 
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
@@ -64,19 +83,6 @@ const SEO = ({ description, lang, meta, title }) => {
       ].concat(meta)}
     />
   );
-};
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-};
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string,
 };
 
 export default SEO;

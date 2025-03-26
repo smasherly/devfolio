@@ -8,7 +8,12 @@ const classes = {
   content: 'flex-none text-lg text-gray-600 font-light md:flex-1 md:pl-20',
 };
 
-const Section = ({ title, children }) => {
+interface SectionProps {
+  title: string;
+  children: React.ReactNode;
+}
+
+const Section: React.FC<SectionProps> = ({ title, children }) => {
   return (
     <div className={classes.wrapper}>
       <div className={classes.title}>

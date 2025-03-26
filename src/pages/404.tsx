@@ -9,7 +9,7 @@ const classes = {
   link: 'underline',
 };
 
-const NotFoundPage = () => (
+const NotFoundPage: React.FC = () => (
   <Layout>
     <SEO title="Not found" />
     <h1 className={classes.title}>404: Not Found</h1>

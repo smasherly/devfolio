@@ -1,34 +1,57 @@
-const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
+import path from 'path';
+import { createFilePath } from 'gatsby-source-filesystem';
+import type { GatsbyNode } from 'gatsby';
 
-exports.createPages = async ({ graphql, actions }) => {
+interface MarkdownRemark {
+  node: {
+    fields: {
+      slug: string;
+    };
+    frontmatter: {
+      title: string;
+    };
+  };
+}
+
+interface QueryResult {
+  allMarkdownRemark: {
+    edges: MarkdownRemark[];
+  };
+}
+
+export const createPages: GatsbyNode['createPages'] = async ({
+  graphql,
+  actions,
+}) => {
   const { createPage } = actions;
 
-  const blogPost = path.resolve(`./src/templates/blog-post.jsx`);
-  const result = await graphql(
-    `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
+  const blogPost = path.resolve(`./src/templates/blog-post.tsx`);
+  const result = await graphql<QueryResult>(`
+    {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
             }
           }
         }
       }
-    `
-  );
+    }
+  `);
 
   if (result.errors) {
     throw result.errors;
+  }
+
+  if (!result.data) {
+    throw new Error('No data returned from GraphQL query');
   }
 
   // Create blog posts pages.
@@ -50,7 +73,11 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 };
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+export const onCreateNode: GatsbyNode['onCreateNode'] = ({
+  node,
+  actions,
+  getNode,
+}) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === `MarkdownRemark`) {
@@ -63,9 +90,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 };
 
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
-  const typeDefs = `
+export const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] =
+  ({ actions }) => {
+    const { createTypes } = actions;
+    const typeDefs = `
     type SiteSiteMetadata {
       siteUrl: String
       name: String
@@ -101,5 +129,5 @@ exports.createSchemaCustomization = ({ actions }) => {
       slug: String
     }
   `;
-  createTypes(typeDefs);
-};
+    createTypes(typeDefs);
+  };

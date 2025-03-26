@@ -15,7 +15,23 @@ const classes = {
   link: 'inline-block py-2 font-semibold text-xs text-indigo-500 hover:text-black',
 };
 
-const Header = ({ metadata = {}, noBlog = false }) => {
+interface SiteMetadata {
+  name: string;
+  description: string;
+  author?: string;
+  github?: string;
+  linkedin?: string;
+}
+
+interface HeaderProps {
+  metadata?: SiteMetadata;
+  noBlog?: boolean;
+}
+
+const Header: React.FC<HeaderProps> = ({
+  metadata = { name: '', description: '' },
+  noBlog = false,
+}) => {
   const twitter = get(metadata, 'author', false);
   const github = get(metadata, 'github', false);
   const linkedin = get(metadata, 'linkedin', false);

@@ -6,7 +6,11 @@ const classes = {
   svg: 'hidden fixed transform right-0 top-5 z-0 xl:block',
 };
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className={classes.outerWrapper}>
       {/* <svg

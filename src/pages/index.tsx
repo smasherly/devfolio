@@ -11,7 +11,69 @@ import SectionProjects from '../components/section-projects';
 import SectionSkills from '../components/section-skills';
 import SEO from '../components/seo';
 
-const Index = ({ data }) => {
+interface Project {
+  name: string;
+  description: string;
+  link: string;
+}
+
+interface Role {
+  name: string;
+  description: string;
+  link: string;
+}
+
+interface Experience {
+  company: string;
+  roles: Role[];
+}
+
+interface Skill {
+  name: string;
+  description: string;
+}
+
+interface SiteMetadata {
+  name: string;
+  title: string;
+  description: string;
+  about: string;
+  author: string;
+  github: string;
+  linkedin: string;
+  projects: Project[];
+  experience: Experience[];
+  skills: Skill[];
+}
+
+interface MarkdownRemark {
+  node: {
+    excerpt: string;
+    fields: {
+      slug: string;
+    };
+    frontmatter: {
+      date: string;
+      title: string;
+      description: string;
+    };
+  };
+}
+
+interface PageData {
+  site: {
+    siteMetadata: SiteMetadata;
+  };
+  allMarkdownRemark: {
+    edges: MarkdownRemark[];
+  };
+}
+
+interface PageProps {
+  data: PageData;
+}
+
+const Index: React.FC<PageProps> = ({ data }) => {
   const about = get(data, 'site.siteMetadata.about', false);
   const projects = get(data, 'site.siteMetadata.projects', false);
   const posts = data.allMarkdownRemark.edges;
@@ -21,7 +83,7 @@ const Index = ({ data }) => {
 
   return (
     <Layout>
-      <SEO />
+      <SEO title={data.site.siteMetadata.title} />
       <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
       {about && <SectionAbout about={about} />}
       {projects && projects.length && <SectionProjects projects={projects} />}
@@ -55,6 +117,7 @@ export const pageQuery = graphql`
         experience {
           company
           roles {
+            name
             description
             link
           }

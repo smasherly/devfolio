@@ -3,7 +3,17 @@ import React from 'react';
 import Section from '../section';
 import SummaryItem from '../summary-item';
 
-const SectionProjects = ({ projects }) => {
+interface Project {
+  name: string;
+  description: string;
+  link: string;
+}
+
+interface SectionProjectsProps {
+  projects: Project[];
+}
+
+const SectionProjects: React.FC<SectionProjectsProps> = ({ projects }) => {
   if (!projects.length) return null;
 
   return (
